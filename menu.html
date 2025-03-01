@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - My Local Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="download.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="index.html#reservation">RESERVATION</a></li>
+                    <li><a href="index.html#location">LOCATION</a></li>
+                    <li><a href="index.html#testimonials">TESTIMONIALS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Menu</h1>
+    </section>
+
+    <!------ Menu Items ------>
+    <section class="menu-items">
+        <div class="row">
+            <div class="menu-col">
+                <img src="download (1).jpg" alt="Dish 1">
+                <h3>[Gujarati Cusine]</h3>
+                <p>[Gujarati cuisine is a delightful medley of sweet, salty, and spicy flavors.]</p>
+            </div>
+            <div class="menu-col">
+                <img src="download (2).jpg" alt="Dish 2">
+                <h3>[Combo Of Cusines]</h3>
+                <p>[Mixed cuisines are a fusion of diverse culinary traditions, creating innovative and exciting dishes that blend flavors, techniques, and ingredients from around the world..].</p>
+            </div>
+            <div class="menu-col">
+                <img src="download (5).jpg" alt="Dish 3">
+                <h3>[items for snacks]</h3>
+                <p>[ A tasty bites that can be sweet or savory, perfect for satisfying cravings between meals or enjoying during casual gatherings.].</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-col">
+                <img src="download (6).jpg" alt="Dish 4">
+                <h3>[Chinese Cusine]</h3>
+                <p>[Chinese cuisine offers a rich tapestry of flavors and textures, featuring iconic dishes like dumplings, Peking duck, and sweet and sour pork.].</p>
+            </div>
+            <div class="menu-col">
+                <img src="download (7).jpg" alt="Dish 5">
+                <h3>[Italian Cusine]</h3>
+                <p>[Italian cuisine is a celebration of fresh, high-quality ingredients, featuring classic dishes like pasta, pizza, and risotto.].</p>
+            </div>
+            <div class="menu-col">
+                <img src="download (8).jpg" alt="Dish 6">
+                <h3>[South Indian Cusine]</h3>
+                <p>[South Indian cuisine is known for its vibrant flavors, featuring popular dishes like dosas, idlis, and sambar].</p>
+            </div>
+        </div>
+    </section>
+
+    <!------ Footer ------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> [All in One] is a family-owned restaurant dedicated to serving fresh, local ingredients in a warm and inviting setting. We are passionate about providing exceptional dining experiences.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made <i class="fa fa-heart-o"></i> by Vidhi Patel</p>
+    </section>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
